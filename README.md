@@ -7,10 +7,10 @@ by Hassan Arbabi & Igor Mezic, 2016
 
 The examples are:
 
-Lorenz_POD: computation of a POD basis for observables on chaotic Lorenz attractor
-PeriodicCavityFlow: computation of Koopman eigenvalues for periodic nonlinear flows using Hankel-DMD
-QPeriodicCavityFlow: computation of Koopman eigenvalues for periodic nonlinear flows using Exact Hankel-DMD
-VanDerPol_phase: computation of asymptotic phase for trajectories of Van der Pol oscillator
+Lorenz_POD: computation of a POD basis for observables on chaotic Lorenz attractor,
+PeriodicCavityFlow: computation of Koopman eigenvalues for periodic nonlinear flows using Hankel-DMD,
+QPeriodicCavityFlow: computation of Koopman eigenvalues for periodic nonlinear flows using Exact Hankel-DMD,
+VanDerPol_phase: computation of asymptotic phase for trajectories of Van der Pol oscillator.
 
 
 
@@ -18,7 +18,7 @@ VanDerPol_phase: computation of asymptotic phase for trajectories of Van der Pol
 The DMD routinesin the +DMD folder:
 
 
-companion-matrix DMD = DMD_Vanilla
-SVD-enhanced DMD = DMD_Schmid
-Exact DMD	= EXACTDMD
+companion-matrix DMD = DMD_Vanilla,
+SVD-enhanced DMD = DMD_Schmid,
+Exact DMD	= EXACTDMD.
 
