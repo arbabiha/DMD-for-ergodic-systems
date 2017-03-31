@@ -29,7 +29,7 @@ r = Data1(n:n+m);
 H = hankel(c,r).';
 
 % applying SVD-enhanced DMD
-[ HModes,Hank,~ ] = DMD_Schmid(H);
+[ HModes,Hank,~ ] = DMD.DMD_Schmid(H);
 
 Freqs = ( log(Hank)./(1i*.1));
 
