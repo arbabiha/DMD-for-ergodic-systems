@@ -17,7 +17,7 @@ VanDerPol_phase: computation of asymptotic phase for trajectories of Van der Pol
 
 The DMD routines in the +DMD folder:
 
-
+algorithm suggested in the above paper= Hankel-DMD
 companion-matrix DMD = DMD_Vanilla,
 SVD-enhanced DMD = DMD_Schmid,
 Exact DMD	= EXACTDMD.
