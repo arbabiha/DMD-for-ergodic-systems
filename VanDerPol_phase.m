@@ -6,7 +6,6 @@ clc,clear
 
 % the Van der Pol oscillator model
 mu = 0.3;
-% number of points n
 VDP = @(x) [x(end/2+1:end); ...
                        mu*(1-x(1:end/2).^2).*x(end/2+1:end)-x(1:end/2)];
                    
@@ -18,15 +17,15 @@ tspan = 0:dt:100;
 %% we choose the observable f=z1+z2 and put it in a row vector
 Data = (Z(:,1)+Z(:,2)).'; 
 
-% SVD Hankel-DMD method
-m = 250;       % number of points on which function is smapled 
+%  Hankel-DMD method
+m = 350;       % number of points on which function is smapled 
 n = 100;    % number of Koopman operator iterations 
-c = Data(1:n).';
-r = Data(n:n+m-1);
-H = hankel(c,r).';  % the Hankel matrix of data
-[ HModes,Hank,Norm ] = DMD.DMD_Schmid(H);
 
-w0_Hankel = ( log(Hank(1))./(1i*dt));     % the dominant frequency - w_0
+
+[ HModes, Evalues, Norms ] = DMD.Hankel_DMD( Data,n,m );
+
+
+w0_Hankel = ( log(Evalues(1))./(1i*dt));     % the dominant frequency - w_0
 
 BETA = angle(HModes(:,1));
 

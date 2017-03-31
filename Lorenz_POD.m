@@ -36,7 +36,7 @@ H = hankel(c,r).';
 
 [U,S,V]=svd(H/sqrt(m),0);
 disp('first six singular values')
-diag(S(1:6,1:6))    
+diag(S(1:6,1:6))    % check out how they vary with changing m
 %% POD basis as colorfield on the attractor
 tdata = tspan(ntr+(1:m));
 xc = x(1:m);
