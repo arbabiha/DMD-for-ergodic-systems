@@ -1,10 +1,9 @@
 %% POD of the observables on the Lorenz attractor
 % "Ergodic Theory, Dynamic Mode Decomposition & computation of Koopman
 % spectral properties" by Hassan Arbabi & Igor Mezic 2016
-% sec IV
+% sec 4
 
-clear
-
+clc,clear
 % Lorenz chaotic model 1963
 sigma=10;
 rho = 28;
@@ -38,6 +37,10 @@ H = hankel(c,r).';
 disp('first six singular values')
 diag(S(1:6,1:6))    % check out how they vary with changing m
 %% POD basis as colorfield on the attractor
+set(0,'defaultTextInterpreter','latex', ...
+    'defaultLegendInterpreter','latex', ...
+    'defaultAxesTickLabelInterpreter','latex');
+
 tdata = tspan(ntr+(1:m));
 xc = x(1:m);
 yc = X(ntr + (1:m),2)';
@@ -59,10 +62,10 @@ for im = 1:6
     max(col);
 
     view(-6,13)
-    title(['$\tilde \psi_',num2str(im),'$'],'interpreter','latex','FontSize',14)
+    title(['$\tilde \psi_',num2str(im),'$'],'FontSize',14)
 end
-    xlabel('$z_1$','interpreter','latex')%,ylabel('y'),
-    zlabel('$z_3$','interpreter','latex')
+    xlabel('$z_1$')%,ylabel('y'),
+    zlabel('$z_3$')
     set(gcf,'Position',[100 100 1044 450])
 
 
@@ -70,7 +73,7 @@ end
 
 figure(21),clf
 plot(1:n,V(:,1:6))
-xlabel('$i$','interpreter','latex','FontSize',12)
+xlabel('$i$')
 xlim([1 100])
 legend({'$v_1$','$v_2$','$v_3$','$v_4$','$v_5$','$v_6$'},'interpreter','latex','FontSize',14)
 
