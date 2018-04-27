@@ -58,7 +58,7 @@ for ir = 1:size(Data,1)
     
 end
     % the DMD
-   [HModes,HEvalues,ExactModes,Norms ] = DMD.ExactDMD( X,Y,Tol );
+   [HModes,HEvalues,~,Norms ] = DMD.Exact_DMD( X,Y,Tol );
 
     
 end
