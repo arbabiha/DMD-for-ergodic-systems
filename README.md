@@ -1,5 +1,5 @@
 # DMD-for-ergodic-systems
-This folder shows the application of Dynamic Mode Decomposition (DMD) algorithm for computing the eigenvalues and eigenfunctions of the Koopman operator  for * dynamical systems with ergodic attractors* following the paper  
+This folder shows the application of Dynamic Mode Decomposition (DMD) algorithm for computing the eigenvalues and eigenfunctions of the Koopman operator  for **dynamical systems with ergodic attractors** following the paper  
 "Ergodic Theory, Dynamic Mode Decomposition and Computation of Koopman scpectral properties"
 SIAM Journal on Applied Dynamical Systems, by Hassan Arbabi & Igor Mezic, 2017
 
