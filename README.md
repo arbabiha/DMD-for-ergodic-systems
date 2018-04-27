@@ -24,5 +24,7 @@ EXACT_DMD (Tu et al 2015, Journal of Computational Dynamics)
 
 
 send comments and questions to arbabiha@gmail.com
+
 H. Arbabi
+
 November 2017
