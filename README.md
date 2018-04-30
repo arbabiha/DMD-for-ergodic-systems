@@ -7,7 +7,7 @@ SIAM Journal on Applied Dynamical Systems, by Hassan Arbabi & Igor Mezic, 2017
 ### The examples in the root folder:
 
 Lorenz_POD: computation of a POD basis for observables on chaotic Lorenz attractor,  
-QPeriodicCavityFlow: computation of Koopman eigenvalues for periodic nonlinear flows using Exact Hankel-DMD,
+QPeriodicCavityFlow: computation of Koopman eigenvalues for quais-periodic nonlinear flows using Exact Hankel-DMD,
 VanDerPol_phase: computation of asymptotic phase for trajectories of Van der Pol oscillator.
 
 
