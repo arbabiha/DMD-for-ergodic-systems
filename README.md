@@ -16,13 +16,12 @@ VanDerPol_phase: computation of asymptotic phase for trajectories of Van der Pol
 ### The DMD routines in the +DMD folder:
 
 Hankel-DMD (algorithm suggested in the above paper),
+companion-matrix DMD (Rowley et al 2009, Journal of Fluid Mechanics),
+SVD-enhanced DMD (Schmid 2010, Journal of Fluid Mechanics),
+EXACT_DMD (Tu et al 2015, Journal of Computational Dynamics). 
 
-companion-matrix DMD (Rowley et al 2009, Journal of Fluid Mechanics)
-SVD-enhanced DMD (Schmid 2010, Journal of Fluid Mechanics)
-EXACT_DMD (Tu et al 2015, Journal of Computational Dynamics) 
 
-
-send comments and questions to arbabiha@gmail.com
+Send comments and questions to arbabiha@gmail.com.
 
 H. Arbabi
 
